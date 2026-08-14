@@ -6,8 +6,8 @@ WORKDIR /app
 
 # Copy dependency list first, install — cached separately from app code
 # so code changes don't force a full reinstall of sklearn/xgboost/etc.
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+COPY requirements-deploy.txt .
+RUN pip install --no-cache-dir -r requirements-deploy.txt
 
 # Only what's needed to SERVE predictions — not ml/, notebooks/, data/
 COPY app/ ./app/
