@@ -1,0 +1,3 @@
+1. import data 
+2. data wrangling : dealing with missing values, data format, data type conversion, renaming columns, etc. 
+3. exploratory data analysis (EDA) : univariate and bivariate analysis, visualizations, etc.
