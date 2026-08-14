@@ -1,5 +1,5 @@
 # Base image: minimal Python 3.11
-FROM python:3.11-slim
+FROM python:3.12-slim
 
 # Everything below runs relative to /app inside the container
 WORKDIR /app
